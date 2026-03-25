@@ -1,6 +1,7 @@
+import { PluginExport } from "@maro/maro";
+
 import { EditCommand } from "./commands/edit";
 import { OpenCommand } from "./commands/open";
-import { PluginExport } from "../../../dist/lib";
 
 const plugin: PluginExport = {
   name: "maro-plugin-notes",
