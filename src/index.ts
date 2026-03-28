@@ -2,6 +2,8 @@ import { PathRegistry, PluginExport } from "@maro/maro";
 
 import { EditCommand } from "./commands/edit";
 import { OpenCommand } from "./commands/open";
+import { WebCommand } from "./commands/web";
+
 
 const plugin: PluginExport = {
   name: "maro-plugin-notes",
@@ -14,7 +16,8 @@ const plugin: PluginExport = {
       aliases: ["notes"],
       subcommands: [
         OpenCommand,
-        EditCommand
+        EditCommand,
+        WebCommand
       ]
     }
   ]
