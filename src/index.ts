@@ -3,6 +3,7 @@ import { PathRegistry, PluginExport } from "@maro/maro";
 import { EditCommand } from "./commands/edit";
 import { OpenCommand } from "./commands/open";
 import { WebCommand } from "./commands/web";
+import { NewCommand } from "./commands/new";
 
 
 const plugin: PluginExport = {
@@ -17,6 +18,7 @@ const plugin: PluginExport = {
       subcommands: [
         OpenCommand,
         EditCommand,
+        NewCommand,
         WebCommand
       ]
     }
